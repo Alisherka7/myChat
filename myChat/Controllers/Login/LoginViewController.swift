@@ -83,6 +83,8 @@ class LoginViewController: UIViewController {
                                  width: size,
                                  height: size)
         
+        
+        
         emailField.frame = CGRect(x: 30,
                                   y: imageView.bottom+60,
                                   width: scrollView.width-60,
