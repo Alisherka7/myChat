@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A7F9175327A2FF5900E27904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9175227A2FF5900E27904 /* AppDelegate.swift */; };
 		A7F9175527A2FF5900E27904 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9175427A2FF5900E27904 /* SceneDelegate.swift */; };
-		A7F9175727A2FF5900E27904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9175627A2FF5900E27904 /* ViewController.swift */; };
+		A7F9175727A2FF5900E27904 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9175627A2FF5900E27904 /* ConversationsViewController.swift */; };
 		A7F9175A27A2FF5900E27904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F9175827A2FF5900E27904 /* Main.storyboard */; };
 		A7F9175C27A2FF5C00E27904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F9175B27A2FF5C00E27904 /* Assets.xcassets */; };
 		A7F9175F27A2FF5C00E27904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F9175D27A2FF5C00E27904 /* LaunchScreen.storyboard */; };
@@ -19,13 +19,14 @@
 		A7F9177427A30E7100E27904 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9177327A30E7100E27904 /* VideoPlayerViewController.swift */; };
 		A7F9177627A30E9500E27904 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9177527A30E9500E27904 /* NewConversationViewController.swift */; };
 		A7F9177827A30EB200E27904 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9177727A30EB200E27904 /* ProfileViewController.swift */; };
+		A7F9177B27A3271400E27904 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F9177A27A3271400E27904 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A7F9174F27A2FF5900E27904 /* myChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F9175227A2FF5900E27904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F9175427A2FF5900E27904 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7F9175627A2FF5900E27904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7F9175627A2FF5900E27904 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		A7F9175927A2FF5900E27904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F9175B27A2FF5C00E27904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F9175E27A2FF5C00E27904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		A7F9177327A30E7100E27904 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		A7F9177527A30E9500E27904 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		A7F9177727A30EB200E27904 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A7F9177A27A3271400E27904 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,13 @@
 		A7F9176827A302D200E27904 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A7F9175627A2FF5900E27904 /* ViewController.swift */,
-				A7F9176C27A30D8C00E27904 /* LoginViewController.swift */,
-				A7F9176E27A30DA500E27904 /* RegisterViewController.swift */,
+				A7F9177927A31D1200E27904 /* Login */,
+				A7F9175627A2FF5900E27904 /* ConversationsViewController.swift */,
 				A7F9177127A30E6000E27904 /* PhotoViewerViewController.swift */,
 				A7F9177327A30E7100E27904 /* VideoPlayerViewController.swift */,
 				A7F9177527A30E9500E27904 /* NewConversationViewController.swift */,
 				A7F9177727A30EB200E27904 /* ProfileViewController.swift */,
+				A7F9177A27A3271400E27904 /* Extentions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,6 +133,15 @@
 				A7F9175D27A2FF5C00E27904 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A7F9177927A31D1200E27904 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A7F9176C27A30D8C00E27904 /* LoginViewController.swift */,
+				A7F9176E27A30DA500E27904 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +216,9 @@
 			files = (
 				A7F9176D27A30D8C00E27904 /* LoginViewController.swift in Sources */,
 				A7F9176F27A30DA500E27904 /* RegisterViewController.swift in Sources */,
+				A7F9177B27A3271400E27904 /* Extentions.swift in Sources */,
 				A7F9177627A30E9500E27904 /* NewConversationViewController.swift in Sources */,
-				A7F9175727A2FF5900E27904 /* ViewController.swift in Sources */,
+				A7F9175727A2FF5900E27904 /* ConversationsViewController.swift in Sources */,
 				A7F9177427A30E7100E27904 /* VideoPlayerViewController.swift in Sources */,
 				A7F9175327A2FF5900E27904 /* AppDelegate.swift in Sources */,
 				A7F9177827A30EB200E27904 /* ProfileViewController.swift in Sources */,
